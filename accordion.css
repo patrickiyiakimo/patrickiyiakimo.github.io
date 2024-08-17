@@ -1,0 +1,21 @@
+/* Style the buttons that are used to open and close the accordion panel */
+
+
+.accord {
+  background-color: #ac9090;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 2px solid;
+  transition: 0.4s;
+}
+
+.list {
+  padding: 0 18px;
+  background-color: #d8d3d3;
+  /* background-color: white; */
+  display: none;
+  overflow: hidden;
+}
