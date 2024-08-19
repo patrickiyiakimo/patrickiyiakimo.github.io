@@ -1,0 +1,88 @@
+body{
+padding:0;
+margin:0;
+background:whitesmoke;
+}
+
+.calc{
+width:350px;
+padding:0;
+margin:100px auto;
+text-align:center;
+background:gray;
+box-shadow:1px 1px 8px black;
+}
+.calc h1{
+font-size:40px;
+font-family:calibri;
+font-weight:bold;
+color:white;
+text-transform:cepitalize;
+padding:8px 0px;
+text-align:center;
+width:100%;
+background:#222;
+margin:0 auto;
+}
+#inp{
+position:relative;
+width:100%;
+padding:8px 0px;
+text-align:center;
+font-size:16px;
+font-family:arial;
+font-weight:normal;
+color:#222;
+outline:none;
+border:none;
+background:white;
+}
+.btns{
+position:relative;
+width:100%;
+padding:10px 0px;
+}
+
+.btns button{
+border:none;
+outline:none;
+width:50px;
+height:50px;
+font-size:30px;
+color:#222;
+vertical-align:middle;
+border-radius:50px;
+background:white;
+margin:10px 5px;
+display:inline-block;
+font-weight:bolder;
+}
+.btns button:hover{
+    background-color: antiquewhite;
+    cursor:pointer;
+}
+.btns button:active{
+    background-color: rgb(189, 172, 151);
+}
+button{
+border:none;
+outline:none;
+width:50px;
+height:50px;
+font-size:20px;
+color:#222;
+border-radius:50px;
+vertical-align:middle;
+background:white;
+margin:10px 5px;
+display:inline-block;
+font-weight:bolder;
+}
+
+button:hover{
+    background-color: antiquewhite;
+    cursor:pointer;
+}
+button:active{
+    background-color: rgb(189, 172, 151);
+}
