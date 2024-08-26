@@ -32,7 +32,7 @@ function showCountry(data) {
         <h5 class="countryName">${data.name.common}</h5>
         <p><strong>Population:</strong> ${data.population.toLocaleString()}</p>
         <p class="regionName"><strong>Region:</strong> ${data.region}</p>
-        <p><strong>Capital:</strong> ${data.capital || "N/A"}</p>
+        <p><strong>Capital:</strong> ${data.capital}</p>
     </div>`;
 
   country.addEventListener("click", () => showCountryDetail(data));
@@ -50,13 +50,13 @@ function showCountryDetail(data) {
         <h1>${data.name.common}</h1>
         <div class="modalInfo">
           <div class="innerLeft inner">
-            <p><strong>Name:</strong> ${data.name.common || "N/A"}</p>
+            <p><strong>Name:</strong> ${data.name.common}</p>
             <p><strong>Population:</strong> ${data.population}</p>
             <p><strong>Region:</strong> ${data.region}</p>
-            <p><strong>Sub-region:</strong> ${data.subregion || "N/A"}</p>
+            <p><strong>Sub-region:</strong> ${data.subregion}</p>
           </div>
           <div class="innerRight inner">
-            <p><strong>Capital:</strong> ${data.capital || "N/A"}</p>
+            <p><strong>Capital:</strong> ${data.capital}</p>
             <p><strong>Top Level Domain, Native Name:</strong> ${data.tld.join(", ") || "N/A"}</p>
             <p><strong>Currencies:</strong> ${formatCurrencies(data.currencies)}</p>
             <p><strong>Languages:</strong> ${formatLanguages(data.languages)}</p>
@@ -88,10 +88,10 @@ regionFilters.forEach(region => {
 
 searchInput.addEventListener("input", () => filterBySearch(searchInput.value.toLowerCase()));
 
-toggleButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  moonIcon.classList.toggle("fas");
-});
+// toggleButton.addEventListener("click", () => {
+//   document.body.classList.toggle("dark");
+//   moonIcon.classList.toggle("fas");
+// });
 
 back.addEventListener("click", toggleModal);
 
@@ -119,3 +119,5 @@ function toggleModal() {
 
 // Initialize the application
 getCountries();
+
+

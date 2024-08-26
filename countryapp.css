@@ -12,13 +12,13 @@ body {
     font-family: "Nunito+Sans", sans-serif;
 }
 
-.dark {
+/* .dark {
     --bgColor: hsl(207, 26%, 17%);
     --fontColor: hsl(0, 0%, 98%);
     background: var(--bgColor);
     color: var(--fontColor);
     --countrybgColor: hsl(209, 23%, 22%);
-}
+} */
 
 .container {
     width: 100%;
