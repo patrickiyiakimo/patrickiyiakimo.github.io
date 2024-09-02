@@ -94,21 +94,6 @@ function initiateEditComment(commentElement, comment) {
   });
 }
 
-// Confirm delete comment
-// function confirmDeleteComment(comment) {
-//   const deleteConfirm = document.querySelector(".delete-confirm-container");
-//   deleteConfirm.classList.remove("hidden");
-
-//   deleteConfirm.querySelector("#delete-cancel-btn").addEventListener("click", () => {
-//     deleteConfirm.classList.add("hidden");
-//   });
-
-//   deleteConfirm.querySelector("#delete-confirm-btn").addEventListener("click", () => {
-//     deleteComment(comment);
-//     deleteConfirm.classList.add("hidden");
-//   });
-// }
-
 // Set up reply button
 function setUpReplyButton(commentElement, comment) {
   const replyButton = commentElement.querySelector("#reply-btn");
