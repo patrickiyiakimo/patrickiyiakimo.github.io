@@ -112,10 +112,11 @@ i {
 }
 
 .countries {
-    padding: 30px;
+    padding: 90px;
+    margin:70px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
 }
 
 .country {
